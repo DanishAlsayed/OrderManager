@@ -1,0 +1,17 @@
+Assumptions
+The flow of callbacks for an order:
+1- Request
+2- Ack/Reject
+3- Fill (if acked in (2) above)
+
+Notes:
+An order that has been acked cannot be rejected
+An an amend cannot be entertained for an order that does not exist or has been fully filled
+An amend is applied on the original order after it has been acked
+Only the last amend is entertained i.e. if an amend is submitted for an order that already has an unacked amend the new amend will replace the existing unacked amend
+Exceptions are thrown in case any of the callbacks fails to succeed in its intended operation
+Part A corresponds to while Part B RequestRateListener corresponds to PositionsListener
+I assumed Part A (RequestRateListener) and Part B (PositionsListener) are independent as the assessment description asked for implementing the Listener interface in each of parts A and B
+I will send the .h and .cpp files via email as instructed (i.e. no .zip files)
+For Part A, once the request rate exceeded the next request is not entertained until the rate falls below the threshold, I assume this was to prevent exchange spamming
+No order can be amended down to have quantity 0
