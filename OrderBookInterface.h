@@ -2,8 +2,8 @@
 // Created by Danish Al-sayed on 15-Mar-20.
 //
 
-#ifndef ECLIPSETEST_ORDERBOOKINTERFACE_H
-#define ECLIPSETEST_ORDERBOOKINTERFACE_H
+#ifndef ORDERBOOKINTERFACE_H
+#define ORDERBOOKINTERFACE_H
 
 #include "OrderReplacement.h"
 #include "Order.h"
@@ -21,4 +21,4 @@ public:
     //return remaining quantity, negative value in case of error
     virtual int fill(int id, int quantityFilled, bool &side) = 0;
 };
-#endif //ECLIPSETEST_ORDERBOOKINTERFACE_H
+#endif //ORDERBOOKINTERFACE_H

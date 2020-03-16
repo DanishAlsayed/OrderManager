@@ -2,8 +2,8 @@
 // Created by Danish Al-sayed on 14-Mar-20.
 //
 
-#ifndef ECLIPSETEST_LISTENER_H
-#define ECLIPSETEST_LISTENER_H
+#ifndef LISTENER_H
+#define LISTENER_H
 
 class Listener {
 public:
@@ -42,4 +42,4 @@ public:
             int quantityFilled) = 0;
 };
 
-#endif //ECLIPSETEST_LISTENER_H
+#endif //LISTENER_H

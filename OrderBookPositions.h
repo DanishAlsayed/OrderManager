@@ -2,8 +2,8 @@
 // Created by Danish Al-sayed on 15-Mar-20.
 //
 
-#ifndef ECLIPSETEST_ORDERBOOKPOSITIONS_H
-#define ECLIPSETEST_ORDERBOOKPOSITIONS_H
+#ifndef ORDERBOOKPOSITIONS_H
+#define ORDERBOOKPOSITIONS_H
 
 
 #include <unordered_map>
@@ -50,4 +50,4 @@ public:
 };
 
 
-#endif //ECLIPSETEST_ORDERBOOKPOSITIONS_H
+#endif //ORDERBOOKPOSITIONS_H

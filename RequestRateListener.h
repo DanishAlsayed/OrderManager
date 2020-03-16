@@ -2,8 +2,8 @@
 // Created by Danish Al-sayed on 14-Mar-20.
 //
 
-#ifndef ECLIPSETEST_REQUESTRATELISTENER_H
-#define ECLIPSETEST_REQUESTRATELISTENER_H
+#ifndef REQUESTRATELISTENER_H
+#define REQUESTRATELISTENER_H
 
 
 #include "Listener.h"
@@ -42,4 +42,4 @@ public:
 };
 
 
-#endif //ECLIPSETEST_REQUESTRATELISTENER_H
+#endif //REQUESTRATELISTENER_H

@@ -2,8 +2,8 @@
 // Created by Danish Al-sayed on 15-Mar-20.
 //
 
-#ifndef ECLIPSETEST_POSITIONSLISTENER_H
-#define ECLIPSETEST_POSITIONSLISTENER_H
+#ifndef POSITIONSLISTENER_H
+#define POSITIONSLISTENER_H
 
 
 #include "OrderBook.h"
@@ -48,4 +48,4 @@ public:
 };
 
 
-#endif //ECLIPSETEST_POSITIONSLISTENER_H
+#endif //POSITIONSLISTENER_H

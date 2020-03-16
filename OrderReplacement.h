@@ -2,8 +2,8 @@
 // Created by Danish Al-sayed on 14-Mar-20.
 //
 
-#ifndef ECLIPSETEST_ORDERREPLACEMENT_H
-#define ECLIPSETEST_ORDERREPLACEMENT_H
+#ifndef ORDERREPLACEMENT_H
+#define ORDERREPLACEMENT_H
 
 
 class OrderReplacement {
@@ -20,4 +20,4 @@ public:
 };
 
 
-#endif //ECLIPSETEST_ORDERREPLACEMENT_H
+#endif //ORDERREPLACEMENT_H

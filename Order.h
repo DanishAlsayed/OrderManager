@@ -2,8 +2,8 @@
 // Created by Danish Al-sayed on 14-Mar-20.
 //
 
-#ifndef ECLIPSETEST_ORDER_H
-#define ECLIPSETEST_ORDER_H
+#ifndef ORDER_H
+#define ORDER_H
 
 
 class Order {
@@ -38,4 +38,4 @@ public:
 };
 
 
-#endif //ECLIPSETEST_ORDER_H
+#endif //ORDER_H
