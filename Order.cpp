@@ -5,7 +5,6 @@
 #include <stdexcept>
 #include "Order.h"
 
-//TODO: how to catch this exception so module does not crash? Surround by named constructor?
 Order::Order(const int id, const double price, const int quantity, const char side) : id(id), price(price),
                                                                                       quantity(quantity),
                                                                                       acked(false) {
@@ -30,7 +29,6 @@ Order::Order(int id, double price, int quantity, bool sideBuy, bool ack) : id(id
     ensurePositive(id, price, quantity);
 }
 
-//TODO: const correctness? Do I need to return const type?
 int Order::getId() const {
     return id;
 }

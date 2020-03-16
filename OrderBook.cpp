@@ -4,14 +4,8 @@
 
 #include "OrderBook.h"
 
-//TODO: change to initialization list
-OrderBook::OrderBook() {
-    book = std::unordered_map<int, Order>();
-    replaceRequests = std::unordered_map<int, OrderReplacement>();
-    orderToReplacement = std::unordered_map<int, int>();
+OrderBook::OrderBook():book(std::unordered_map<int, Order>()),replaceRequests(std::unordered_map<int, OrderReplacement>()),orderToReplacement(std::unordered_map<int, int>()) {
 }
-
-//TODO: repeated ID?
 
 bool OrderBook::emplace(const Order &order) {
     return book.emplace(order.getId(), order).second;
@@ -27,7 +21,6 @@ std::unordered_map<int, Order>::const_iterator OrderBook::getOrderIterator(int i
     return it;
 }
 
-//TODO: move as a concrete function in the parent class?
 bool OrderBook::replace(const std::unordered_map<int, OrderReplacement>::iterator &it) {
     auto oldLoc = book.find(it->second.getOldId());
     oldLoc->second.setId(it->second.getNewId());

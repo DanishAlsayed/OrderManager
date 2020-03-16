@@ -10,7 +10,7 @@ class Order {
     int id;
     int quantity;
     double price;
-    bool buy; //TODO: make const?
+    bool buy;
     bool acked;
 
     static void ensurePositive(int i, double px, int qty);

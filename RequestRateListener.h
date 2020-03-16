@@ -20,16 +20,14 @@ class RequestRateListener : public Listener {
     double timeDifference();
     void reset(clock_t current);
     double timeWindow();
-    //OrderBook orderBook;
 
     void throwException(const std::string &message);
 public:
-    //TODO: MOVE BACK TO PRIVATE, THIS IS ONLY FOR TESTING
+
     OrderBook orderBook;
     RequestRateListener(int x, double y);
     bool requestRateExceeded();
 
-    //TODO: is double a good choice?
     double timeTillNextRequest();
 
     void OnInsertOrderRequest(int id, char side, double price, int quantity) override;

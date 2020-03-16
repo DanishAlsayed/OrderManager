@@ -12,8 +12,6 @@
 #include "OrderBookInterface.h"
 
 class OrderBook : public OrderBookInterface {
-    //TODO: will 1 map be just as good?
-    //TODO: we do not need to sort by price, right?
     std::unordered_map<int, Order> book;
     std::unordered_map<int, OrderReplacement> replaceRequests;
     std::unordered_map<int, int> orderToReplacement;
